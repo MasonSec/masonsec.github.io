@@ -9,6 +9,23 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 @charset "utf-8";
 
+@font-face {
+font-family: 'Bold';
+src: url('https://cdn.jsdelivr.net/gh/masonsec/fonts@1.0/Bold/Bold.eot');
+src:
+url('https://cdn.jsdelivr.net/gh/masonsec/fonts@1.0/Bold/Bold.eot') format('embedded-opentype'),
+url('https://cdn.jsdelivr.net/gh/masonsec/fonts@1.0/Bold/Bold.woff2') format('woff2'),
+url('https://cdn.jsdelivr.net/gh/masonsec/fonts@1.0/Bold/Bold.woff') format('woff'),
+url('https://cdn.jsdelivr.net/gh/masonsec/fonts@1.0/Bold/Bold.ttf') format('truetype'),
+url('https://cdn.jsdelivr.net/gh/masonsec/fonts@1.0/Bold/Bold.svg') format('svg');
+font-weight: 900;
+font-style: normal;
+font-display: swap;
+}
+*:not([class*="icon"]):not(i) {
+font-family: "Bold" !important;
+}
+
 :root{
 	--themecolor: #5e72e4;
 	--card-radius: 4px;
@@ -20,7 +37,7 @@ html.themecolor-toodark.darkmode{
 
 body{
 	background: #f4f5f7 !important;
-	font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Bold", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
 a{
 	transition: color .25s ease;
@@ -97,8 +114,8 @@ article .post-content a:hover:before{
 	transform: scaleX(1);
 }
 article pre:not(.hljs-codeblock){
-	font-family: Consolas,Menlo,Monaco,'Andale Mono WT','Andale Mono','Lucida Console','Lucida Sans Typewriter','DejaVu Sans Mono','Bitstream Vera Sans Mono','Liberation Mono','Nimbus Mono L','Courier New',Courier,monospace;
-	font-size: 14px;
+	font-family: Consolas,Menlo,Monaco,'Bold','Andale Mono WT','Andale Mono','Lucida Console','Lucida Sans Typewriter','DejaVu Sans Mono','Bitstream Vera Sans Mono','Liberation Mono','Nimbus Mono L','Courier New',Courier,monospace;
+	font-size: 16px;
 	line-height: 1.375;
 	text-align: left;
 	white-space: pre;
@@ -1863,7 +1880,7 @@ html.darkmode.amoled-dark .comment-item-text .comment-sticker:active{
 }
 .comment-item-text pre {
 	font-family: Consolas,Menlo,Monaco,'Andale Mono WT','Andale Mono','Lucida Console','Lucida Sans Typewriter','DejaVu Sans Mono','Bitstream Vera Sans Mono','Liberation Mono','Nimbus Mono L','Courier New',Courier,monospace;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.375;
 	text-align: left;
 	white-space: pre;
